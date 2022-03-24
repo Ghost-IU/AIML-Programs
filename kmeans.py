@@ -34,7 +34,7 @@ plt.ylabel("Petal Width")
 #Graph for K-Means
 plt.subplot(2,2,2)
 plt.scatter(X.Petal_Length, X.Petal_Width, c= colormap[model.labels_], s= 40)
-plt.title("Real Clusters")
+plt.title("K-Means Clusters")
 plt.xlabel("Peatal Length")
 plt.ylabel("Petal Width")
 
@@ -55,7 +55,7 @@ g_pred = gmm.predict(xs)
 #Plot for EM clusters
 plt.subplot(2,2,3)
 plt.scatter(X.Petal_Length, X.Petal_Width, c= colormap[g_pred], s= 40)
-plt.title("Real Clusters")
+plt.title("GM Clusters")
 plt.xlabel("Peatal Length")
 plt.ylabel("Petal Width")
 
