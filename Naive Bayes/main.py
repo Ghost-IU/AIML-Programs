@@ -97,6 +97,10 @@ print("Pima Indian Diabetes dataset is loaded ....")
 print(f"Total instances in dataset: {len(dataset)}")
 print(f"No. of attributes : {len(dataset[0])-1}")
 
+print("Few instances of testset:")
+for i in range(5):
+    print(f"{i+1} : {dataset[i]}")
+
 splitratio = 0.2
 trainingSet, testSet = splitDataset(dataset, splitratio)
 print("Dataset is split into Training and Testing....")
